@@ -16,26 +16,6 @@ $soma = $valor1 + $valor2; // 10 + 15 -> 25
 //$soma = $soma + 3; // 28
 $soma +=3; // 28
 
-echo "soma é: " . $soma
-
-  <?php 
-/**
- * string 'texto qualquer'
- * char || character 'A'
- * int || integer 23
- * float 23.8
- * double 23.8 
- * decimal 23.8
- */
-
-$aviao = "Boeing747";
-$valor1 = 10;
-$valor2 = 15;
-$soma = $valor1 + $valor2; // 10 + 15 -> 25
-// mesma coisa
-//$soma = $soma + 3; // 28
-$soma +=3; // 28
-
 echo "soma é: " . $soma;
 //tabuada do 5
 $numero = 5;
@@ -148,7 +128,4 @@ $deslta = ($b ** 2) - (4 * $a * $c);
 $x1 = (-$b + sqrt($delta)) / (2 * $a);
 $x1 = (-$b + sqrt($delta)) / (2 * $a);
 echo "<br>o x1: $x1 e o x2 é: $x2<br>";
-
-
-
 
