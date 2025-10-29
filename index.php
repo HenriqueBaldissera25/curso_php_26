@@ -129,3 +129,30 @@ $x1 = (-$b + sqrt($delta)) / (2 * $a);
 $x1 = (-$b + sqrt($delta)) / (2 * $a);
 echo "<br>o x1: $x1 e o x2 é: $x2<br>";
 
+// Converter graus Fahrenheit para Celsius. 95°F -> ?°F (35)
+$grausFahrenheit = 95;
+$grausCelsius = $grausFahrenheit / 1.8;
+echo "<br>95°F é igual a: $grausCelsius °C<br>";
+
+//Converter graus Celsius para Kelvin. 35ºC -> ?ºK.
+$grausCelsius = 35;
+$grausKelvin = $grausCelsius + 273.15;
+echo "<br>35ºC é igual a: $grausKelvin Kº";
+
+// Converter graus Kelvin para Celsius. ?ºK -> 35ºC.
+$grausKelvin = 308.15;
+$grausCelsius = $grausKelvin - 273.15;
+echo "<br>A temperatura $grausKelvin ºK em graus Celsius é: $celsius ºC <br>";
+
+$tenhoDinheiro = true; 
+$tenhoVontadeCafe = true;
+
+if ($tenhoDinheiro && $tenhoVontadeCafe) {
+    echo "vou tomar café<br>";
+} else if ($tenhoDinheiro && !$tenhoVontadeTomarCafe) {
+    echo "vou comprar chocolate<br>";
+} else {
+    echo "nao tenho vontade de nada<br>";
+}
+
+$soma = 10 + 10;
