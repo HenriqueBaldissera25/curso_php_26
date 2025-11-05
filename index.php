@@ -60,12 +60,12 @@ $prova1 = 10; // 3
 $prova2 = 5; // 1.5
 $prova3 = 7; // 3.2
 
-$prova1 = 3;
-$prova1 = 3;
-$prova1 = 4;
+$peso1 = 3;
+$peso2 = 3;
+$peso3 = 4;
 
 $mpNumerador = ($prova1 * $peso1) + ($prova2 * $peso2) +($prova3 * $peso3);
-$mpdenominador = $peso1 + $peso2 + $peso3;
+$mpDenominador = $peso1 + $peso2 + $peso3;
 
 $mediaPonderada = $mpNumerador / $mpDenominador;
 echo "<br>A Média é: $mediaPonderada<br>";
@@ -116,17 +116,17 @@ echo "<br>O IMC da pessoa é: $imc kg/m²<br>";
 // Converter graus Celsius para Fahrenheit. 35°C -> ?°F
 echo "<br>Converter graus Celsius para Farenheit<br>";
 $grausCelsius = 35;
-$gruasFahrenheit = ($grausCelsius * 9/5) + 32;
-echo "<br>35°C é igual a: $gruasFarenheit °F<br>";
+$grausFahrenheit = ($grausCelsius * 9/5) + 32;
+echo "<br>35°C é igual a: $grausFahrenheit °F<br>";
 
 // Aplicar a forula de bahskara para a seguinte equação do segundo grau:
 // $a = 1; $b = -3; $c = -4;
 $a = 1;
 $b = -3;
 $c = -4;
-$deslta = ($b ** 2) - (4 * $a * $c);
+$delta = ($b ** 2) - (4 * $a * $c);
 $x1 = (-$b + sqrt($delta)) / (2 * $a);
-$x1 = (-$b + sqrt($delta)) / (2 * $a);
+$x2 = (-$b + sqrt($delta)) / (2 * $a);
 echo "<br>o x1: $x1 e o x2 é: $x2<br>";
 
 // Converter graus Fahrenheit para Celsius. 95°F -> ?°F (35)
@@ -142,7 +142,7 @@ echo "<br>35ºC é igual a: $grausKelvin Kº";
 // Converter graus Kelvin para Celsius. ?ºK -> 35ºC.
 $grausKelvin = 308.15;
 $grausCelsius = $grausKelvin - 273.15;
-echo "<br>A temperatura $grausKelvin ºK em graus Celsius é: $celsius ºC <br>";
+echo "<br>A temperatura $grausKelvin ºK em graus Celsius é: $grausCelsius ºC <br>";
 
 $tenhoDinheiro = true; 
 $tenhoVontadeCafe = true;
@@ -170,7 +170,7 @@ echo "<br>35ºC é igual a: $grausKelvin Kº";
 // Converter graus Kelvin para Celsius. ?ºK -> 35ºC.
 $grausKelvin = 308.15;
 $grausCelsius = $grausKelvin - 273.15;
-echo "<br>A temperatura $grausKelvin ºK em graus Celsius é: $celsius ºC <br>";
+echo "<br>A temperatura $grausKelvin ºK em graus Celsius é: $grausCelsius ºC <br>";
 
 $tenhoDinheiro = true; 
 $tenhoVontadeCafe = true;
@@ -184,3 +184,95 @@ if ($tenhoDinheiro && $tenhoVontadeCafe) {
 }
 
 $soma = 10 + 10;
+
+/* Simular o funcionamento de uma calculadora
+    utilizar if,else if, else
+    Operadores: + - * / 
+    Dica: vão ter uma variavel $operador.
+*/
+// Dados da Calculadora
+$operador = "-";
+$valor1 = 2;
+$valor2 = 6;
+
+if($valor1 < $valor2){
+    $temporaria = $valor1;
+    $valor1 = $valor2;
+    $valor2 = $temporaria;
+}
+
+if($operador == "+") {
+    $soma = $valor1 + $valor2;
+    echo "soma dos valores $valor1 + $valor2: $soma";
+} else if ($operador == "-"){
+    $resultado = $valor1 - $valor2;
+    echo "A subtração dos valores $valor1 - $valor2: $resultado";
+} else if ($operador == "*") {
+    $resultado = $valor1 * $valor2;
+    echo "A multiplicação dos valores $valor1 * $valor2: $resultado";
+} else if ($operador == "/") {
+    $resultado = $valor1 / $valor2;
+    echo "A divisão dos valores $valor1 / $valor2: $divisão"; 
+} 
+
+/*Fazer exercicio 8 da pagina 15 da apostila
+    Não utilizar array.
+    utilizar os exercicios das médias e aplicar
+    a logica que valida se o aluno passou de ano
+*/
+
+echo "<br>Média Aritimeticas<br>";
+$valor1 = 8;
+$valor2 = 5;
+$valor3 = 7;
+$mediaAritimetica = ($valor1 + $valor2 + $valor3) / 3;
+
+if($mediaAritimetica >=6) {
+    echo "Aluno foi aprovado $mediaAritimetica"; 
+} else {
+    echo "Aluno foi reprovado $mediaAritimetica"; 
+}
+
+echo "<br>Calcular a Média Ponderada.<br>";
+$prova1 = 10; // 3
+$prova2 = 5; // 1.5
+$prova3 = 7; // 3.2
+
+$peso1 = 3;
+$peso2 = 3;
+$peso3 = 4;
+
+$mpNumerador = ($prova1 * $peso1) + ($prova2 * $peso2) +($prova3 * $peso3);
+$mpDenominador = $peso1 + $peso2 + $peso3;
+
+$mediaPonderada = $mpNumerador / $mpDenominador;
+
+if($mediaPonderada>=6) {
+    echo "Aluno foi aprovado $mediaPonderada"; 
+} else {
+    echo "Aluno foi reprovado $mediaPonderada"; 
+}
+
+echo "<br>Calcular a Média Ponderada.<br>";
+$prova1 = 2; 
+$prova2 = 5; 
+$prova3 = 3; 
+$prova4 = 4;
+$prova5 = 5;
+
+$quantidadeProvas = 3; // n
+$mhDenominador = (1 / $prova1) + (1 / $prova2) + (1 / $prova3) + (1 / $prova4) + (1 / $prova5);
+$mediaHarmonica = $quantidadeProvas / $mhDenominador;
+
+if($mediaHarmonica>=6) {
+    echo "Aluno foi aprovado $mediaHarmonica"; 
+} else {
+    echo "Aluno foi reprovado $mediaHarmonica";
+}
+
+$nome="Fernanda";
+$idade= 21;
+
+if($idade >= 18);
+    
+
