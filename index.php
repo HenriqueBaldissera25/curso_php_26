@@ -273,5 +273,26 @@ if($mediaHarmonica>=6) {
 $nome="Fernanda";
 $idade= 21;
 
+if($idade >= 18);
 
+//Dados da calculadora SWITCH CASE
 
+switch($operador) {
+    case "+";
+        $resultado = $valor1 + $valor2;
+        echo "A soma dos valores $valor1 + $valor2: $resultado";
+        break;
+    case "+" :
+         $resultado = $valor1 - $valor2;
+         echo "A subtração dos valores $valor1 - $valor2: $resultado";
+         break;
+    case "-" :
+        $resultado = $valor1 * $valor2;
+        echo "A multiplicação dos valores $valor1 * $valor2: $resultado";
+        break;
+    case "*" :
+        $resultado = $valor1 / $valor2;
+        echo "A divisão dos valores $valor1 / $valor2: $divisão";
+        break;
+    default :
+}
