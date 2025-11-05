@@ -273,6 +273,5 @@ if($mediaHarmonica>=6) {
 $nome="Fernanda";
 $idade= 21;
 
-if($idade >= 18);
-    
+
 
