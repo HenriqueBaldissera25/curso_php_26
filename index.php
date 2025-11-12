@@ -296,3 +296,94 @@ switch($operador) {
         break;
     default :
 }
+
+// Exercicio 5 pag 15.
+$num =2;
+$restoDivisão = $num % 2;
+
+if($restoDivisão == 0) {
+    echo "O $num é par";
+} else {
+    echo "O $num é impar";
+}       
+      
+// $contar = $contar + 1 || $contar += 1; || $contar++;
+for($contar = 0; $contar < 10; $contar++) {
+    if ($contar == 5) {
+        continue;
+    }
+
+    echo "<br>";
+    echo "O numero é: $contar";
+}
+
+//tabuada do 5
+$numero = 5;
+echo "<br>Tabuada do $numero<br>";
+for($contar = 0; $contar <= 10; $contar++) {
+    echo "<br>";
+    // echo "$numero = x $contar = " . $numero * $contar;
+
+    $restoDivisão = $contar % 2;
+    $ehDivisãoExata = $restoDivisão == 0;
+
+    if($ehDivisãoExata) {
+        echo "$contar é par";
+    } else {
+        echo "$contar é impar";
+    } 
+}
+
+// Exibir os numeros pares de 1 até 50;
+
+// Exibir os numeros em ordem DECRESCENTE (Maior para Menor - DESC) de 10 - 0.
+
+// Calcular o fatorial de um numero. Ex.: calcular o fatorial de 5.
+
+
+echo "<br>";
+for($contar = 1; $contar <= 50; $contar++) {
+    
+     $restoDivisão = $contar % 2;
+    $ehDivisãoExata = $restoDivisão == 0;
+    
+    if($ehDivisãoExata) {
+        echo "<br> $contar é par";
+    } 
+    
+}
+
+for($numero = 10; $numero >= 1; $numero--) {
+     echo "<br> $numero  ";
+}
+
+
+$fatorial = 5;
+$antecessor = $fatorial -1;
+
+for($numero = $antecessor; $numero >= 1; $numero--) {
+    $fatorial *= $numero; 
+}
+
+echo "<br> $fatorial  ";
+
+
+
+
+for($numero = $antecessor; $numero >= 1; $numero--) {
+    // $fatorial = $fatorial * $numero; // 120
+    $fatorial *= $numero;
+}
+
+$fatorial = 5;
+$antecessor = $fatorial -1; //4
+$numero = $antecessor;
+
+while($numero >= 1) {
+    //$fatorial = $fatorial *$numero; // 120
+    $fatorial *= $numero;
+
+    $numero;
+}
+
+echo "Fatrial: $fatorial <br>";
