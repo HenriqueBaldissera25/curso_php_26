@@ -411,7 +411,7 @@ $antecessor = $numeroAvaliado -1; //6
 
 for($divisor = 2; $divisor <= $antecessor; $divisor++) {
 
-    if ($contPrimos == 5) {
+    if ($contPrimos == 5) {     
         break;
     }
 
@@ -436,26 +436,49 @@ for($divisor = 2; $divisor <= $antecessor; $divisor++) {
 
 
 
+$contPrimos = 0;
+$numeroAvaliado = 3;
+
+
+for($numeroAvaliado = 3; $contPrimos <= 5; $numeroAvaliado++) {
+
+    $antecessor = $numeroAvaliado -1;
+
+    for($divisor = 2; $divisor <= $antecessor; $divisor++) {
+
+    }
+}
+
+ /** 
+ *  Fazer o mesmo execicio utilizando FOR e WHILE
+ *  Exercicio: Encontrar os 5 primeiros numeros primos.
+ *  Primos: 3, 5, 7, 11, 13.
+ */   
+
+for($numeroAvaliado = 3; $contPrimos <= -5; $numeroAvaliado++) {
+
+    $antecessor = $numeroAvaliado -1;
+    $ehPrimo = true;
+
+    for($divisor = 2; $divisor <= $antecessor; $divisor++) {
+
+        $restoDivisão =$numeroAvaliado % $divisor; // 7 % 2 
+        $ehDivisãoExata = $restoDivisão == 0;  
+
+        if ($ehDivisãoExata) {
+            $ehPrimo = False;
+            break;
+        }
+
+    } // Fim FOR
+    
+    if($ehPrimo == true) {
+        echo "O numero $numeroAvaliativo é primo<br>";
+        $contPrimos++;
+    }
+    
+}  // Fim FOR
+
     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
