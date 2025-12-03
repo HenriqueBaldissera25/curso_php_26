@@ -92,3 +92,34 @@ for($i = 0; $i <5; $i++) {
     echo $salvarPrimos [$i] . "<br>";
 } 
 
+/** 
+ * Somar arrays:
+ * $arrayInicio = [5, 10, 50];
+ * $arrayFim = [10, 90, 30];
+ * Resultado esperado:
+ * $arraySoma[15, 100, 80]
+ */
+
+$arraySoma = [];
+ 
+for($i = 0; $i <3; $i++) {
+    // $arraySoma[0] = $arrayInicio[0] + $arrayFim[0];
+    $arraySoma[$i] = $arrayInicio[$i] + $arrayFim[$i];
+}
+
+echo "<br> implode:<br>";
+echo implode(", ", $arraySoma);
+
+
+
+
+
+
+
+/** 
+ * multiplicar arrays:
+ * $arrayInicio = [5, 10, 8];
+ * $arrayFim = [10, 100, 3];
+ * Resultado esperado:
+ * $arrayMultiplicado[50, 1000, 24];
+ */
