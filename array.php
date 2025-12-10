@@ -102,6 +102,10 @@ for($i = 0; $i <5; $i++) {
 
 $arraySoma = [];
  
+$arrayInicio = [5, 10, 50];
+$arrayFim = [10, 90, 30];
+$arraySoma = [15, 100, 80];
+
 for($i = 0; $i <3; $i++) {
     // $arraySoma[0] = $arrayInicio[0] + $arrayFim[0];
     $arraySoma[$i] = $arrayInicio[$i] + $arrayFim[$i];
@@ -111,11 +115,6 @@ echo "<br> implode:<br>";
 echo implode(", ", $arraySoma);
 
 
-
-
-
-
-
 /** 
  * multiplicar arrays:
  * $arrayInicio = [5, 10, 8];
@@ -123,3 +122,72 @@ echo implode(", ", $arraySoma);
  * Resultado esperado:
  * $arrayMultiplicado[50, 1000, 24];
  */
+
+$arrayInicio = [5, 10, 8];
+$arrayFim = [10, 100, 3];
+$arrayMultiplicado = [];
+
+for($i = 0; $i <3; $i++) {
+    // $arraySoma[0] = $arrayInicio[0] + $arrayFim[0];
+    $arrayMultiplicado[$i] = $arrayInicio[$i] + $arrayFim[$i];
+}
+
+echo "<br>A multiplicação dos vetores:<br>";
+echo implode(", ", $arrayMultiplicado);
+
+
+/**
+ * Dada uma palavra informada pelo usuario,
+ * verificar se a mesma forma um palíndromo
+ * Ex.: Ana, subi no onibus, kaiak, Natan.
+ * Dica: um for dentro do outro
+ */
+echo "<br>Palíndromo:<br>";
+$palavra = "ana";
+
+echo $palavra = [0];
+
+$palavra = [0];
+$palavraDois = [1];
+$palavraTres = [2];
+
+$indo = $palavra[$i]; 
+$voltando = $palavra[$j];
+$Epalindromo = true;
+
+
+for($i = 0; $i <3; $i++){
+    $palavraInicio = $palavra[$i];
+
+    for($j - 3; $j >= 0; $j--){
+        $palavraFim = $palavra[$j];
+
+        $SãoIguais = $palavraInicio == $palavraFim;
+
+        if (!$SãoIguais) {
+
+            $ehPalindromo = false;
+            break;
+        }
+    }
+    
+
+
+}
+    
+if ($ehPalindromo) {
+
+    echo "<br> A palavra é palindromo";
+}
+else{
+    echo "<br> A palavra não é palindromo";
+}
+    
+
+
+    
+
+
+
+
+
