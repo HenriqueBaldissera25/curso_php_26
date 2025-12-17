@@ -106,3 +106,20 @@ for($numeroAvaliado = 3; $contPrimos <= -5; $numeroAvaliado++) {
     
 }  // Fim FOR
 
+/**
+ * Exercicio para as Férias.
+ * Calcular o tempo de duração de um jogo. 
+ * Ex.: Jogo de futebol. Tempo de duração 90 minutos || 1 hora e meia.
+ * 
+ * A-) Começa: 21 horas, qual a hora do termino desse jogo?
+ * R. 22:30:00
+ * 
+ * B-) Começa: 23 horas e 45 minutos, qual a hora do termino desse jogo?
+ * R. 01:15:00
+ */
+
+
+
+
+
+
