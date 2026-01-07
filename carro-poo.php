@@ -56,5 +56,10 @@ $chave = "presencial";
 $objCarro->ligar($chave);
 $objCarro->ligar($chave);
 
+class Cachorro {
+    public $patas;
+    public $pelagem;
+    public $raça;
 
+}
 
