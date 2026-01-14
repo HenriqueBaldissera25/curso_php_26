@@ -12,6 +12,18 @@ abstract class PessoaAbstract {
     public $complemento;
     public $pontoReferencia;
 
+public function resetarPessoa() {
+    $this->nome = "";
+    $this->idade = "";
+    $this->logradouro = "";
+    $this->cep = "";
+    $this->bairro = "";
+    $this->cidade = "";
+    $this->estado = "";
+    $this->numero = "";
+    $this->complemento = "";
+    $this->pontoReferencia = "";
+}
 
     public function validarCPF($cpf) {
         echo "123.456.789-00";
@@ -20,4 +32,3 @@ abstract class PessoaAbstract {
     public function validarCNPJ($cnpj) {
         echo "123.456.789/0001-11";
     }
-}
