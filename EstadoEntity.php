@@ -1,0 +1,17 @@
+<?php
+
+require_once "./EntityAbstract.php";
+
+// Model || Entity
+class EstadoEntity extends EntityAbstract {
+    public $estado;
+    public $sigla;
+
+        public function __construct()
+    {
+        $this->tabelaNome = "Estado";
+    }
+
+
+
+}
