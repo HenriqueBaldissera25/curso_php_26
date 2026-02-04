@@ -23,3 +23,16 @@ CREATE USER 'aluno'@localhost IDENTIFIED BY '1234';
 GRANT ALL PRIVILEGES ON *.* TO 'aluno'@localhost IDENTIFIED BY '1234';
 
 https://phoenixnap.com/kb/how-to-create-mariadb-user-grant-privileges#:~:text=To%20create%20a%20new%20MariaDB,to%20a%20local%20MySQL%20server.
+
+select u.* from usuario as u 
+inner join pessoa fisica as pf ON u.id = pf.usuario_alteracao
+
+select u.* from usuario as u 
+left join pessoa fisica as pf ON u.id = pf.usuario_alteracao
+
+select u.* from usuario as u 
+right join pessoa_fisica as pf ON u.id = pf .usuario_alteracao
+
+set session sql_mode = 'No_engine_substitution';
+
+
