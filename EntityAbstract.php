@@ -38,7 +38,7 @@ abstract class EntityAbstract implements EntityInterface {
 
 
     public function deletar($id) {
-
+        $sql = "DELETE FROM usuario WHERE id = $id";
     }
 
 
