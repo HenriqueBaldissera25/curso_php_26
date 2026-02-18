@@ -17,13 +17,19 @@ abstract class EntityAbstract implements EntityInterface {
     public $atualizadoEm;
     public $usuarioAlteracao;
 
+    public function __construct(BancoDados $banco)
+    {
+        $this->bancoDeDados = $banco;
+    }
+    
     public function criar() {
 
     }
     
 
     public function obter($id) {
-
+        $sql = "SELECT * FROM $this->tabelaNome WHERE id = $id";
+        $this->
     }
 
 
