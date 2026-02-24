@@ -2,7 +2,7 @@
 
 require_once "./conexao.php";
 require_once "./BancoDeDados.php";
-require_once "./Usuario.php";
+require_once "./UsuarioEntity.php";
 
-$banco = new BancoDadps ($conexao);
-$usuarioModel = new UsuarioEntity($banco);
+$banco = new BancoDados($conexao);
+$usuarioEntity = new UsuarioEntity($banco);
