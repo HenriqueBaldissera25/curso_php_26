@@ -2,20 +2,17 @@
 
 require_once "./EntityAbstract.php";
 
-class BancoDados {
+// Model || Entity
+ class UsuarioEntity extends EntityAbstract {
+    public $nomeUsuario;
+    public $email;
+    public $status = true;
+    public $cadastroPreenchido = false;
 
-    private $onexao;
-
-    public_function __construct($conexao)
+    public function __construct(BancoDados $banco)
     {
-        $this->conexao= $conexao;
-    
+        parent::__construct($banco);
+        $this->tabelaNome = "usuario";
     }
 
-    public function fecharConexao()
-    {
-        $this->conxao->close();
-    }
-
-    
-}
+ }
